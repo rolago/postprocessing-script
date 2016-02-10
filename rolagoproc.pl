@@ -2,25 +2,14 @@
 # by Agostino Rolando
 # Vers. 2.0 , 21 jan 2016
 
-
-#
-Perl script for post-processing g-code files.
-
-
+# Perl script for post-processing g-code files.
 #This script automatically processes g-code files in order to compensate for layers shift, #both in X and Y directions.
-
 #Besides, a scaling feature has been recently added, in order to grow/shrink 3d objects in #X and Y dir.
-
-
 #In Repetier Host, you have to declare its pathname in menu 
-
 # Printer Settings -> Advanced as in the following example:
-
-
 #"perl C:\Users\alfa\Desktop\3dpostproc\rolagoproc.pl  #out
-
-The script is executed after #each slicing action 
-and operates a filtering on the g-code produced by the slicer (slic3r).
+#The script is executed after #each slicing action 
+#and operates a filtering on the g-code produced by the slicer (slic3r).
 
 #!/usr/bin/perl -i.bak
 
